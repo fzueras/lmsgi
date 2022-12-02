@@ -3,12 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contacto - Felix Zueras Lavilla</title>
-    <link rel="icon" href="imagenes/logo.png" type="image/gif" sizes="16x16" 
+    <title>Formulario de Contacto - Felix Zueras Lavilla</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/gif" sizes="16x16">
 </head>
+
 <body>
-
-
-
-    
+    <form action="mailto:aa22.fjzueras46@iespabloserrano.com" method="post">
+        <h1>FORMULARIO DE CONTACTO</h1>
+        <section>
+            <h3>Rellene los siguientes datos</h3>
+            <fieldset style="width:25%;">
+                <legend><strong>Sus Datos</strong></legend>
+                <ul>
+                    <li>
+                        <label for="Nombre">Nombre*</label>
+                        <input id="Nombre" name="Nombre" type="text" placeholder="Introduce tu nombre" required>
+                    </li>
+                    <li>
+                        <label for="Apellidos">Apellidos</label>
+                        <input id="Apellidos" name="Apellidos" type="text" placeholder="Introduce tus apellidos">
+                    </li>
+                </ul>
+                <legend><strong>Otros datos</strong></legend>
+                <ul>
+                    <li>
+                        <label for="Telefono">Teléfono</label>
+                        <input id="Telefono" name="Telefono" type="tel" placeholder="Teléfono">
+                    </li>
+                    <li>
+                        <label for="Email">E-mail*</label>
+                        <input id="Email" name="Email" type="email" placeholder="Correo electrónico" required>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset style="width:25%;">
+                <legend><strong>Asunto</strong></legend>
+                <ul>
+                    <li>
+                        <label for="comentario">Dejenos sus comentarios*</label>
+                        <textarea id="comentario" name="comentario" maxlength="500" rows="10" cols="30"
+                            placeholder="Max.500 caracteres" required></textarea>
+                    </li>
+                    <li>
+                        <label for="robot">No soy un robot*</label>
+                        <input id="robot" name="robot" type="checkbox" required>
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
+        <section>
+            <p>Los campos con * son obligatorios</p>
+            <button type="reset">Limpiar</button>
+            <input type="submit">
+            <br>
+            <br>
+            <a href="../index.html">Volver pagina inicio</a>
+        </section>
+    </form>
 </body>
+
+</html>
